@@ -1,2 +1,2 @@
 # DREAMSHARE
-The project is called **DREAMSHARE**
+A website that allows to create your holiday activities.
