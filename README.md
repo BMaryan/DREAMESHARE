@@ -1,2 +1,2 @@
-# Final task by HTML/CSS
+# DREAMSHARE
 The project is called **DREAMSHARE**
