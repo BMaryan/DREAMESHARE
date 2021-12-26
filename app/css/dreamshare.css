@@ -257,29 +257,38 @@ p {
 
 .row-img__card_home {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/Bitmap3.png);
+	box-shadow: rgb(72 72 72 / 30%) -5px 5px, rgb(88 88 88 / 30%) -10px 10px, rgb(123 123 123 / 20%) -15px 15px, rgb(149 149 149 / 10%) -20px 20px,
+		rgb(192 192 192 / 5%) -25px 25px;
 	transform: perspective(800px) rotateY(20deg) scale(0.9) rotateX(0deg);
 }
 
 .row-img__card_home:hover {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Bitmap3.png);
+	box-shadow: none;
 }
 
 .row-img__card_road {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/Bitmap1.png);
+	box-shadow: rgb(72 72 72 / 30%) 0px 5px, rgb(88 88 88 / 30%) 0px 10px, rgb(123 123 123 / 20%) 0px 15px, rgb(149 149 149 / 10%) 0px 20px,
+		rgb(192 192 192 / 5%) 0px 25px;
 	transform: perspective(800px) rotateY(0deg) scale(0.8) rotateX(0deg);
 }
 
 .row-img__card_road:hover {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Bitmap1.png);
+	box-shadow: none;
 }
 
 .row-img__card_sea {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/Bitmap2.png);
+	box-shadow: rgb(72 72 72 / 30%) 5px 5px, rgb(88 88 88 / 30%) 10px 10px, rgb(123 123 123 / 20%) 15px 15px, rgb(149 149 149 / 10%) 20px 20px,
+		rgb(192 192 192 / 5%) 25px 25px;
 	transform: perspective(800px) rotateY(-20deg) scale(0.9) rotateX(0deg);
 }
 
 .row-img__card_sea:hover {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/Bitmap2.png);
+	box-shadow: none;
 }
 
 .row-img__step {
@@ -790,7 +799,7 @@ p {
 	}
 
 	.content_row__title {
-		margin: 20px 0 10px 0;
+		margin: 30px 0 50px 0;
 	}
 
 	.row-img {
@@ -809,6 +818,7 @@ p {
 	.row-img__card_home,
 	.row-img__card_road,
 	.row-img__card_sea {
+		box-shadow: none;
 		transform: none;
 	}
 
