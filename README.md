@@ -1,2 +1,2 @@
-# Final task by HTML/CSS
-The project is called **DREAMSHARE**
+# DREAMSHARE
+A website that allows to create your holiday activities.
