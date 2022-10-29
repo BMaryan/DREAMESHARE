@@ -13,7 +13,7 @@ function build(done) {
 function html(done) {
   gulp
     .src("./app/*.html")
-    .pipe(concat("dreamshare.min.html"))
+    .pipe(concat("index.min.html"))
     .pipe(htmlclean({ collapseWhitespace: true }))
     .pipe(gulp.dest("./dist"));
   done();
@@ -21,7 +21,7 @@ function html(done) {
 
 // css minify
 function css(done) {
-  gulp.src("./app/css/*").pipe(concat("dreamshare.min.css")).pipe(cleanCss()).pipe(gulp.dest("./dist/css"));
+  gulp.src("./app/css/*").pipe(concat("index.min.css")).pipe(cleanCss()).pipe(gulp.dest("./dist/css"));
   done();
 }
 
@@ -44,4 +44,5 @@ function images(done) {
 }
 
 // realization of tasks
+exports.build = build;
 exports.realizationOfTask = gulp.parallel(html, css, font, fontAwesome, images, build);
