@@ -3,12 +3,6 @@ const gulp = require("gulp"),
   cleanCss = require("gulp-clean-css"),
   htmlclean = require("gulp-htmlclean");
 
-// build
-function build(done) {
-  gulp.src("./dist/*").pipe(gulp.dest("build"));
-  done();
-}
-
 // html minify
 function html(done) {
   gulp
@@ -43,6 +37,12 @@ function images(done) {
   done();
 }
 
+// build
+function build(done) {
+  gulp.src("./dist/*").pipe(gulp.dest("build"));
+  done();
+}
+
 // realization of tasks
 exports.build = build;
-exports.realizationOfTask = gulp.parallel(html, css, font, fontAwesome, images, build);
+exports.realizationOfTask = gulp.parallel(html, css, font, fontAwesome, images);
