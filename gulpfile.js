@@ -12,7 +12,7 @@ function build(done) {
 // html minify
 function html(done) {
   gulp
-    .src("./app/*.html")
+    .src("./public/*.html")
     .pipe(concat("index.min.html"))
     .pipe(htmlclean({ collapseWhitespace: true }))
     .pipe(gulp.dest("./dist"));
@@ -21,25 +21,25 @@ function html(done) {
 
 // css minify
 function css(done) {
-  gulp.src("./app/css/*").pipe(concat("index.min.css")).pipe(cleanCss()).pipe(gulp.dest("./dist/css"));
+  gulp.src("./public/css/*").pipe(concat("index.min.css")).pipe(cleanCss()).pipe(gulp.dest("./dist/css"));
   done();
 }
 
-// font from app to dist
+// font from public to dist
 function font(done) {
-  gulp.src("./app/font/*").pipe(gulp.dest("./dist/font"));
+  gulp.src("./public/font/*").pipe(gulp.dest("./dist/font"));
   done();
 }
 
-// fontAwesome from app to dist
+// fontAwesome from public to dist
 function fontAwesome(done) {
-  gulp.src("./app/font-awesome/font-awesome-4.7.0/css/*").pipe(gulp.dest("./dist/font-awesome/font-awesome-4.7.0/css"));
+  gulp.src("./public/font-awesome/font-awesome-4.7.0/css/*").pipe(gulp.dest("./dist/font-awesome/font-awesome-4.7.0/css"));
   done();
 }
 
-// images from app to dist
+// images from public to dist
 function images(done) {
-  gulp.src("./app/images/*").pipe(gulp.dest("./dist/images"));
+  gulp.src("./public/images/*").pipe(gulp.dest("./dist/images"));
   done();
 }
 
