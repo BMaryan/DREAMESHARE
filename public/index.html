@@ -19,8 +19,8 @@
             </div>
 
             <div class="header-auth">
-              <p class="header-log-in"><a href="#">Log in</a></p>
-              <p class="header-sing-up"><a href="#">Sing up</a></p>
+              <p class="header-log-in">Log in</p>
+              <p class="header-sing-up">Sing up</p>
             </div>
           </div>
 
@@ -32,7 +32,7 @@
 
             <div class="header-subtitle">And find the perfect partner to fullfill it</div>
 
-            <div class="header-button"><a href="#">Find your holiday partner</a></div>
+            <div class="header-button"><a href="">Find your holiday partner</a></div>
 
             <a href="#dreamshare-works" class="header-button__scroll">
               <i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
@@ -151,7 +151,7 @@
               </div>
             </div>
 
-            <div class="row-partner__button"><a href="#">See other partners</a></div>
+            <div class="row-partner__button"><a>See other partners</a></div>
           </div>
         </main>
 
@@ -188,17 +188,17 @@
 
       <!-- ----------------------------------FOOTER----------------------------------------- -->
       <footer class="footer">
-        <div class="footer-logo"><a href="#">DREAMSHARE</a></div>
+        <div class="footer-logo"><a href="">DREAMSHARE</a></div>
 
         <div class="footer-company">
           <div class="footer-company__title">Company</div>
 
-          <div class="footer-company__item"><a href="#">About</a></div>
-          <div class="footer-company__item"><a href="#">Contact</a></div>
-          <div class="footer-company__item"><a href="#">Press</a></div>
-          <div class="footer-company__item"><a href="#">Blog</a></div>
-          <div class="footer-company__item"><a href="#">Terms and Privacy</a></div>
-          <div class="footer-company__item"><a href="#">Help</a></div>
+          <div class="footer-company__item"><a>About</a></div>
+          <div class="footer-company__item"><a>Contact</a></div>
+          <div class="footer-company__item"><a>Press</a></div>
+          <div class="footer-company__item"><a>Blog</a></div>
+          <div class="footer-company__item"><a>Terms and Privacy</a></div>
+          <div class="footer-company__item"><a>Help</a></div>
         </div>
 
         <div class="footer-partners">Partners</div>
@@ -213,11 +213,16 @@
 
       <!-- ----------------------------------SCROLL_TOP----------------------------------------- -->
       <div class="shape-scroll-top">
-        <a href="#"><i class="fa fa-angle-up scroll-top" aria-hidden="true"></i></a>
+        <a onclick="topFunction()"><i class="fa fa-angle-up scroll-top" aria-hidden="true"></i></a>
       </div>
     </div>
 
     <script>
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
       window.onscroll = function () {
         let pageOffset = document.documentElement.scrollTop || document.body.scrollTop;
         let btn = document.querySelector(".shape-scroll-top");
