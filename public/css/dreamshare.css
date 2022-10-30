@@ -139,14 +139,14 @@ p {
 
 .header-title {
   color: #ffffff;
-  font-size: 52px;
+  font-size: 8vh;
   font-weight: 700;
   text-align: center;
 }
 
 .header-subtitle {
   color: #f7f3f2;
-  font-size: 24px;
+  font-size: 4vh;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -729,6 +729,17 @@ p {
 }
 
 /* --------------------MEDIA_SCREEN---------------------- */
+/* ----------------------MEDIA_HEIGHT---------------------- */
+@media (max-height: 400px) {
+  .header-content {
+    padding-top: 20px;
+  }
+  .header-body {
+    height: 60vh;
+  }
+}
+
+/* ----------------------MEDIA_WIDTH---------------------- */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .partner__box {
     width: 34%;
